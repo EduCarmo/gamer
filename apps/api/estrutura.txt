@@ -1,0 +1,36 @@
+Listagem de caminhos de pasta
+O n�mero de s�rie do volume � 30CC-6FCA
+C:.
+|   .env
+|   .gitignore
+|   .prettierrc
+|   env-sample
+|   eslint.config.mjs
+|   estrutura.txt
+|   nest-cli.json
+|   package.json
+|   printEnv.ts
+|   README.md
+|   tsconfig.build.json
+|   tsconfig.json
+|   
++---generated
+|   \---prisma
++---prisma
+|   |   run-seed.js
+|   |   schema.prisma
+|   |   seed.ts
+|   |   
+|   \---migrations
+|       |   migration_lock.toml
+|       |   
+|       \---20250730235747_adiciona_produto
+|               migration.sql
+|               
+\---src
+        app.controller.spec.ts
+        app.controller.ts
+        app.module.ts
+        app.service.ts
+        main.ts
+        
