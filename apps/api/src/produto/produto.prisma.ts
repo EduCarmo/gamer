@@ -1,3 +1,4 @@
+import { Produto } from '@gstore/core';
 import { Injectable } from '@nestjs/common';
 import { PrismaProvider } from 'src/db/prisma.provider';
 
@@ -6,8 +7,8 @@ import { PrismaProvider } from 'src/db/prisma.provider';
 export class ProdutoPrisma {
     constructor(private readonly prisma: PrismaProvider) {}
 
-    async obter() {
+    async obter(): Promise<Produto[]> {
         const produtos = await this.prisma.produto.findMany();
-        return produtos;
+        return produtos as Produto[];
     }
 }
