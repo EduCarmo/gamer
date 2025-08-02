@@ -3,7 +3,7 @@ import ProdutoItem from "@/components/produto/ProdutoItem";
 import { Produto } from "@gstore/core";
 import { useEffect, useState } from "react";
 
-export default function Home() {
+export default function ListaProdutos() {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className={`
+        grid  gap-5
+        grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+    `}>
       {produtos.map((produto: Produto) => {
         return (
           <ProdutoItem key={produto.id} produto={produto} />
