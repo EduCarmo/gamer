@@ -1,4 +1,5 @@
 import Cabecalho from "./Cabecalho";
+import Rodape from "./Rodape";
 interface PaginaProps {
   children: React.ReactNode;
   className?: string;
@@ -24,6 +25,7 @@ export default function Pagina({ children, className }: PaginaProps) {
         >
           {children}
         </main>
+        <Rodape />
       </div>
     </div>
   );
