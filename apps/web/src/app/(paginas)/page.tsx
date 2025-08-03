@@ -1,8 +1,5 @@
 "use client";
 import ListaProdutos from "@/components/produto/ListaProdutos";
-import ProdutoItem from "@/components/produto/ProdutoItem";
-import { Produto } from "@gstore/core";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   
